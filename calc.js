@@ -34,8 +34,8 @@ function addItems(arr) {
   return arr.indexOf(corrected) === -1 ? arr.push(corrected) : alert(errorMsg);
 }
 
-addItems(toDoList);
-addItems(toDoList);
-addItems(toDoList);
+// addItems(toDoList);
+// addItems(toDoList);
+// addItems(toDoList);
 
-console.log(toDoList);
+// console.log(toDoList);
