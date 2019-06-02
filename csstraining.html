@@ -4,26 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CSS in Depth</title>
+    <title>CSS in Depth: Flexbox</title>
     <link rel="stylesheet" href="./csstraining.css" type="text/css" />
   </head>
   <body>
-    <header>
-      <h1>Franklin Running Club</h1>
-    </header>
-
     <div class="container">
-      <main class="main">
-        <h2>Come join us</h2>
-        <p>
-          The Frankling Running club meets at 6:00pm every Thursday at the town
-          square. Runs are three to five miles, at your pace.
-        </p>
+      <header><h1>Ink</h1></header>
+
+      <nav>
+        <ul class="site-nav">
+          <l1><a href="/">Home</a></l1>
+          <l1><a href="/features">Features</a></l1>
+          <l1><a href="/pricing">Pricing</a></l1>
+          <l1><a href="/support">Support</a></l1>
+          <l1 class="nav-right"><a href="/about">About</a></l1>
+        </ul>
+      </nav>
+
+      <main class="flex">
+        <div class="column-main title">
+          <h1>Team collaboration done right</h1>
+          <p>
+            Thousands of teams from all over the world tyrn to <b>Ink</b> to
+            communicate and get things done.
+          </p>
+        </div>
+
+        <div class="column-sidebar">
+          <div class="tile">
+            <form class="login-form">
+              <h3>Login</h3>
+              <p>
+                <label for="username">Username</label>
+                <input type="text" id="username" name='username' />
+              </p>
+              <button type="submit">Login</button>
+            </form>
+          </div>
+          <div class="tile centered">
+            <small>Starting at</small>
+            <div class="cost">
+              <span class="cost-currency">$</span>
+              <span class="cost-dollaros">20<span>
+              <span class="cost-cents">.00<span>
+            </div>
+            <a href="/pricing" class="cta-button">Sign up</a>
+          </div>
+        </div>
+
       </main>
-      <aside class="sidebar">
-        <div class="widget"></div>
-        <div class="widget"></div>
-      </aside>
+      <!-- container -->
     </div>
   </body>
 </html>
